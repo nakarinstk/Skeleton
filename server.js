@@ -13,7 +13,7 @@ const PORT = process.env.PORT || 5000;
 const headerKey = "x-validate";
 const apiKey = "cat";
 const MIDDLEWARE = (req, res, next) => {
-    next();
+    //next();
   if (req.headers[headerKey] === apiKey) {
     return next();
   } else {
